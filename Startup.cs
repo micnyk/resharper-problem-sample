@@ -34,7 +34,11 @@ namespace resharper_problem_sample
             }
 
             app.UseStaticFiles();
-            app.UseDefaultFiles();
+            app.UseDefaultFiles(new DefaultFilesOptions
+            {
+                RequestPath = "",
+                DefaultFileNames = new[] { "index.html" }
+            });
 
             app.UseMvc();
         }
