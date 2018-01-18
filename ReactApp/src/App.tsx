@@ -4,8 +4,6 @@ import './App.css';
 const logo = require('./logo.svg');
 
 class App extends React.Component {
-  private x: number;
-
   render() {
     return (
       <div className="App">
